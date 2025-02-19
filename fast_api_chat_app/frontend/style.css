@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chat-log {
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+#widget-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.widget-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.widget-header {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+}
+
+.price-widget .price-widget-value {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.weather-widget #weather-widget-info,
+.weather-widget div[id$="-info"] {
+    font-size: 1.1em;
+}
+
+.ai-chat-widget .ai-chat-log {
+    border: 1px solid #ddd;
+    height: 150px;
+    overflow-y: auto;
+    background-color: #f2f2f2;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.ai-chat-widget input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ai-chat-widget button {
+    background-color: #6b46c1;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-message {
+    margin-bottom: 4px;
+}
+
+.ai-msg {
+    background: #e2e8f0;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+}
+
+.user-msg {
+    background: #c6f6d5;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+}
